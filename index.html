@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Scheme Generator</title>
+    <!-- CSS Sheets -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <input type="color" id="color-input" class="color-input">
+            <select name="" id="scheme-selection">
+                <option value="Monochrome" name >Monochrome</option>
+                <option value="Monochrome-dark">Monochrome-dark</option>
+                <option value="Monochrome-light">Monochrome-light</option>
+                <option value="Analogic">Analogic</option>
+                <option value="Complement">Complement</option>
+                <option value="Analogic-complement">Analogic-complement</option>
+                <option value="Triad">Triad</option>
+            </select>
+            <button id="button" type="button">Get colour scheme</button>
+        </div>
+
+            <section class="color-section" id="color-section">
+                <div class="color" data-value="0" id="color-1"></div>
+                <div class="color" data-value="1"></div>
+                <div class="color" data-value="2"></div>
+                <div class="color" data-value="3"></div>
+                <div class="color" data-value="4"></div>
+            </section>
+
+            <section class="hex" id="hex-code-section"></section>
+        </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
